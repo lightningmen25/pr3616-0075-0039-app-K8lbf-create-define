@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rjth
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/pr3616-0075-0039-tenant/pr3616-0075-0039-app/devfile-sample-rjth@sha256:590cbe0c6f549198fb2fdbb22a7f6bc5d59a85120d8b023cb8887048da7a05c3
+        name: my-nodejs
+        resources: {}
+status: {}
